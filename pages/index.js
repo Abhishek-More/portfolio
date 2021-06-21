@@ -14,7 +14,8 @@ export default function Home() {
           <span style={{color: '#FF213D'}}>Texas A&M University</span>
         </a>
       </h1>
-      <iframe src='https://drive.google.com/file/d/16lTpaM7JtuoVnd7Bhenr5tTnvY-y-VYf/view?usp=sharing'></iframe>
     </div>
   )
 }
+
+//<iframe src='https://drive.google.com/file/d/16lTpaM7JtuoVnd7Bhenr5tTnvY-y-VYf/view?usp=sharing'></iframe>
