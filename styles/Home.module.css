@@ -26,6 +26,11 @@
   display: flex;
 }
 
+.headerlink {
+  color: #FF213D;
+  opacity: 1;
+}
+
 .links {
   opacity: 90%;
   display: flex;
@@ -36,7 +41,11 @@
 
 .link {
   color: white;
-  font-size: 2vw;
+  font-size: 27px;
+}
+
+.link :hover {
+  opacity: 0.75;
 }
 
 .footer {
@@ -158,10 +167,38 @@
   transition-property: background, transform;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+@media (max-width: 1000px) {
+  .links {
+    text-align: center;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .links {
+    text-align: center;
     flex-direction: column;
+    width: 100%; 
+  }
+
+  .link {
+    font-size: 27px;
+  }
+
+  .heading {
+    font-size: 25px;
+    width:90%;
+  }
+
+  .main {
+    padding: 2rem 0;
   }
 }
 

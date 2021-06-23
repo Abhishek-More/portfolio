@@ -13,12 +13,14 @@ export default function Home() {
     <div className={styles.main}>
       <div className={styles.heading}>
         <h1>
-          I'm <span style={{color: '#FF213D '}} href="https://google.com">Abhishek More</span>
+          I'm <a className={styles.headerlink} href="https://tamuhack.com/" target="_blank" rel="noopener noreferrer">
+            <span>Abhishek More</span>
+          </a>
           , an 
-          aspiring <a href="public/favicon.ico">
-            <span style={{color: '#FF213D'}}>software engineer</span>
-          </a> and <a href="https://tamuhack.com/" target="_blank" rel="noopener noreferrer">
-            <span style={{color: '#FF213D'}}>hackathon enthusiast</span>
+          aspiring <a className={styles.headerlink} href="public/favicon.ico">
+            <span>software engineer</span>
+          </a> and <a className={styles.headerlink}href="https://tamuhack.com/" target="_blank" rel="noopener noreferrer">
+            <span>hackathon enthusiast</span>
           </a>
         </h1>
       </div>
