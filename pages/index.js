@@ -1,35 +1,24 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import CustomCursor from '../components/customCursor'
 import styles from '../styles/Home.module.css'
+import '../styles/Home.module.css'
 import React from 'react'
 import { useEffect } from 'react';
 
 export default function Home() {
-
-
+  
   useEffect(() => {
-    let mouseCursor = document.querySelector(".cursor");
-    let links = document.querySelectorAll('.link');
-    window.addEventListener('mousemove', cursor);
-
-    function cursor(e) {
-    }
-   
-    return () => {
-    }
   })
 
-
-
   return (
-    <div>
+    <div className={styles.main}>
       <div className={styles.heading}>
         <h1>
           I'm <span style={{color: '#FF213D '}} href="https://google.com">Abhishek More</span>
-          , a<br /> 
-          computer engineering major <br /> 
-          at <a href="public/favicon.ico">
-            <span style={{color: '#FF213D'}}>Texas A&M University</span>
+          , an 
+          aspiring <a href="public/favicon.ico">
+            <span style={{color: '#FF213D'}}>software engineer</span>
+          </a> and <a href="https://tamuhack.com/" target="_blank" rel="noopener noreferrer">
+            <span style={{color: '#FF213D'}}>hackathon enthusiast</span>
           </a>
         </h1>
       </div>
@@ -47,6 +36,7 @@ export default function Home() {
             <h3>Devpost &rarr;</h3>
           </a>
       </div>
+      <CustomCursor/>
     </div>
   )
 }

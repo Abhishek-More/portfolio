@@ -9,7 +9,7 @@
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 8rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -18,9 +18,9 @@
 }
 
 .heading {
-  padding-top: 15vh;
-  font-size: 2.5vw;
+  font-size: 35px;
   text-decoration: white;
+  width: 65%;
   color: white;
   justify-content: center;
   display: flex;
@@ -136,11 +136,27 @@
 }
 
 .cursor {
-  width: 3rem;
-  height: 3rem;
+  width: 40px;
+  height: 40px;
   border: 2px solid white;
   border-radius: 50%;
   position: absolute;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+}
+
+.link-grow {
+  width: 40px;
+  height: 40px;
+  border: 2px solid red;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
 }
 
 @media (max-width: 600px) {
@@ -148,4 +164,20 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+@keyframes cursorAnim {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(3); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
+
+.expand {
+  animation: cursorAnim 0.5s forwards;
 }
