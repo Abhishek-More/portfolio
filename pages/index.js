@@ -7,11 +7,6 @@ import { useEffect } from 'react';
 export default function Home() {
   
   useEffect(() => {
-    let cursor = document.getElementById('custom-cursor');
-    
-    document.addEventListener('touchstart', () => {
-      cursor.style.visibility = 'hidden';
-    })
   })
 
   return (
@@ -41,7 +36,7 @@ export default function Home() {
             <h3>Devpost &rarr;</h3>
           </a>
       </div>
-      <CustomCursor id='customcursor'/>
+      <CustomCursor />
     </div>
   )
 }
