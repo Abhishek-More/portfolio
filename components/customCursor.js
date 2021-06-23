@@ -8,7 +8,6 @@ const CustomCursor = () => {
     useEffect(() => {
       let mouseCursor = document.querySelector("#cursor");
       document.addEventListener('mousemove', cursor);
-
       let links = document.getElementsByTagName('a');
 
       for(let i = 0;i < links.length; i++) {
@@ -16,6 +15,7 @@ const CustomCursor = () => {
           mouseCursor.style.transform = 'scale(2)';
           links[i].style.transform = 'opacity(0.5)'
         })
+
         links[i].addEventListener('mouseleave', () => {
           mouseCursor.style.transform = 'scale(1)';
           links[i].style.transform = 'opacity(1)'
@@ -23,6 +23,7 @@ const CustomCursor = () => {
       }
 
       function cursor(e) {
+        mouseCursor.style.border = '2px solid white';
         mouseCursor.style.top = e.pageY + 'px';
         mouseCursor.style.left = e.pageX + 'px';
       }
