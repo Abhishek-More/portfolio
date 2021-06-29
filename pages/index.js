@@ -13,11 +13,11 @@ export default function Home() {
     <div className={styles.main}>
       <div className={styles.heading}>
         <h1>
-          I'm <a className={styles.headerlink} href="https://tamuhack.com/" target="_blank" rel="noopener noreferrer">
+          I'm <a className={styles.headerlink} href="https://www.linkedin.com/in/abhishek-more-linked" target="_blank" rel="noopener noreferrer">
             <span>Abhishek More</span>
           </a>
           , an 
-          aspiring <a className={styles.headerlink} href="public/favicon.ico">
+          aspiring <a className={styles.headerlink} href="https://github.com/Abhishek-More">
             <span>software engineer</span>
           </a> and <a className={styles.headerlink}href="https://tamuhack.com/" target="_blank" rel="noopener noreferrer">
             <span>hackathon enthusiast</span>
@@ -25,7 +25,7 @@ export default function Home() {
         </h1>
       </div>
       <div className={styles.links}>
-          <a href="resume.pdf" target="_blank" rel="noopener noreferrer" className={styles.link}> 
+          <a href="https://firebasestorage.googleapis.com/v0/b/asciify-a4fba.appspot.com/o/Abhishek%20More%20Resume.pdf?alt=media&token=29e718ff-a964-40d3-b9f9-3627e0987e3f" target="_blank" rel="noopener noreferrer" className={styles.link}> 
             <h3>Resume &rarr;</h3>
           </a>
           <a href="https://github.com/Abhishek-More" target="_blank" rel="noopener noreferrer" className={styles.link}> 
