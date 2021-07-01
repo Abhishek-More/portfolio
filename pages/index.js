@@ -11,6 +11,9 @@ export default function Home() {
 
   return (
     <div className={styles.main}>
+      <head>
+        <title>Abhishek More</title>
+      </head>
       <div className={styles.heading}>
         <h1>
           I'm <a className={styles.headerlink} href="https://www.linkedin.com/in/abhishek-more-linked" target="_blank" rel="noopener noreferrer">
