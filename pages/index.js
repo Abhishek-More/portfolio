@@ -28,7 +28,7 @@ export default function Home() {
         </h1>
       </div>
       <div className={styles.links}>
-          <a href="https://firebasestorage.googleapis.com/v0/b/asciify-a4fba.appspot.com/o/Abhishek%20More%20Resume.pdf?alt=media&token=84cf5ee1-8480-4338-a511-bb9be33bbeed" target="_blank" rel="noopener noreferrer" className={styles.link}> 
+          <a href="https://firebasestorage.googleapis.com/v0/b/asciify-a4fba.appspot.com/o/Abhishek%20More%20Resume.pdf?alt=media&token=612342c0-9664-41ce-beb2-b4265b20002b" target="_blank" rel="noopener noreferrer" className={styles.link}> 
             <h3>Resume &rarr;</h3>
           </a>
           <a href="https://github.com/Abhishek-More" target="_blank" rel="noopener noreferrer" className={styles.link}> 
